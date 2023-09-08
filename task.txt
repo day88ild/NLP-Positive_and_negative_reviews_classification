@@ -1,0 +1,29 @@
+NLP - Positive and negative reviews classification
+
+You’re given a dataset of product reviews by customers. The task is simply to classify reviews
+as positive or negative ones, achieving the best balanced accuracy you can. However, yoursolution should also be efficient and capable of running even on lower-tier machines. We don’t
+set any strict conditions besides the solution not requiring GPU and running reasonably fast on
+lower-end CPUs, but your creativity and skills in terms of squeezing the best performance from
+lightweight pipelines will be appreciated. While the main output of your work is the inference
+code for us to test it, we encourage you to also provide any additional code/notebooks (EDA,
+training, etc.). Their good quality will be an advantage.
+The dataset is provided as 2 standard comma-separated CSV files. Each of them contains
+review IDs and either reviews themselves or their labels, respectively. Your solution will be
+evaluated on a private test dataset that is sampled from the same data distribution as the one
+provided to you. Feel free to train your model on the provided dataset from scratch or use
+third-party datasets for pretraining.
+When delivering your solution, the inference code should be placed in a separate script called
+inference.py. It should be possible to install all the necessary packages to run it from
+requirements.txt using pip. All the additional files, like saved model parameters, should be
+placed near the inference script and loaded automatically. The inference script should accept an
+input file and write classification results into an output file in the same format as the provided
+dataset. A command to run your script should look as follows:
+python3 inference.py test_reviews.csv test_labels_pred.csv
+All the additional code can be provided either as plain Python scripts or Jupyter notebooks
+without any specific requirements for their interface. You’re encouraged to add a README on
+how to use them properly.
+Deliverable:
+● Working training and inference code,
+● Any necessary supplementary files,
+● A short report [in English] on the principle of operation of your solution (better with some
+illustrations)
